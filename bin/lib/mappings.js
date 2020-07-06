@@ -112,6 +112,13 @@ module.exports = {
 					email: {ios: "EmailAddress", android: "textEmailAddress"}
 				}
 			},
+			password: {
+				android: "@android:password",
+				ios: "IsSecure",
+				value: {
+					"true": { ios: "true", android: "true" }
+				}
+			},
 			// need a different handling for ios and android
 			// IsSecure
 			// AutocapitalizationType
